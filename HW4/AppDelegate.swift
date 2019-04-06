@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  HW4
 //
-//  Created by Jose Martinez on 4/5/19.
+//  Created by Jose on 4/4/19.
 //  Copyright © 2019 Jose. All rights reserved.
 //
 
@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let itemStore = TableViewCell()
+        
+        let itemController = window!.rootViewController as! ItemViewController
+        itemController.tableViewC = itemStore
         return true
     }
 
